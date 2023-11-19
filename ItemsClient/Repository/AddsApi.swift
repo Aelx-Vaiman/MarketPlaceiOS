@@ -122,7 +122,7 @@ class AddsApi {
         let url = URL(string: "\(AddsApi.baseUrl)/items")!
         
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "PUT"
         
         do {
             let jsonData = try JSONEncoder().encode(item)
